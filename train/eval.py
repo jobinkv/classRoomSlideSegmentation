@@ -7,6 +7,7 @@ from models import *
 import ipdb
 import numpy as np
 model_path = '/ssd_scratch/cvit/jobinkv/slide_trained_on_resnet_101.pth'
+# give a slide image here
 test_img_path = '/ssd_scratch/cvit/jobinkv/data/img/IMG_20190226_183846_slide.jpg'
 def main(model_path,test_img_path):
     net = PSPNet(num_classes=8,resnet = models.resnet101(),res_path='not_required',pretrained=False).cuda()
