@@ -19,9 +19,6 @@ def main(model_path,test_img_path):
         standard_transforms.ToTensor(),
         standard_transforms.Normalize(*mean_std)
     ])
-    #target_transform = extended_transforms.MaskToTensor()
-    #scaleTest_transform = simul_transforms.Scale(512)
-    #test_simul_transform = simul_transforms.Scale(train_args['input_size'])
     img = Image.open(test_img_path).convert('RGB')
     img = test_input_transform(img)
     with torch.no_grad():
