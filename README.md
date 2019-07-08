@@ -2,7 +2,7 @@
 This code is designed to segment the class room slide images capture using a handheald devise into its semantically meaning full region such as figure, table,
 list, paragraph, equations, etc.
 
-# evaluation of trained model.
+# Evaluation of trained model.
 * Clone the repository
 `git clone https://github.com/jobinkv/classRoomSlideSegmentation.git`
 * Change the directory
